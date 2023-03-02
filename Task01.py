@@ -7,4 +7,4 @@
 list_one = list( map (int, input().split()))
 list_two = list( map (int, input().split()))
 list_three = set(list_one).intersection(set(list_two))
-print(list_three)
+print(sorted(list_three))
