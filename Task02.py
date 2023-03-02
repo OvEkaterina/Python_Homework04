@@ -10,3 +10,11 @@
 # Напишите программу для нахождения максимального числа ягод,
 # которое может собрать за один заход собирающий модуль, 
 # аходясь перед некоторым кустом заданной во входном списке содержащим количество ягод на кустах.
+
+bushes = list( map (int, input().split()))
+blueberry = list ()
+n = len(bushes)
+for i in range (n - 1):
+   blueberry.append((bushes[i-1])+(bushes[i])+(bushes[i+1]))
+blueberry.append((bushes[-2])+(bushes[-1])+(bushes[0]))   
+print (max(blueberry))
